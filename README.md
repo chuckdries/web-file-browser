@@ -12,7 +12,9 @@ Read only for now
 I'm going for nextcloud files but with zero configuration. A more feature-rich version of [serve](https://www.npmjs.com/package/serve)
 
 TODO
-- [ ] basic directory browsing
+- [x] list contenst of directory
+- [x] link to raw files
+- [ ] basic directory browsing (change directory)
 - [ ] image thumbnails
 - [ ] video thumbnails
 - [ ] image viewing
