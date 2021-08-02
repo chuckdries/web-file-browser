@@ -24,6 +24,7 @@ const servePath: string = path.resolve(argv._[0] || ".");
 interface FileObject {
   name: string;
   isDir?: boolean;
+  url?: string;
   statPromise?: Promise<Stats>;
 }
 
@@ -42,6 +43,7 @@ app.get("/directory", async (req, res, next) => {
       return {
         name: file,
         statPromise: stat,
+        url: `/get/${file}`
       };
     }, contents);
     await Promise.all(statPromises);
